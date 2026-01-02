@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP 3010 Assignment 2</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body style="display: flex;
+            flex-direction: column;
+            align-items: center;">
+    <header style="text-align: center;">
+        <h1>Multi-threaded web server</h1>
+        <p>by: Jericho Dinozo</p>
+    </header>
+    <main>
+        <p>This is the main content area for Assignment 2.</p>
+        <div id="credentials-input">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="text" id="password" name="password" placeholder="Password">
+        </div>
+        <div id="credentials-buttons">
+            <button type="button" id="login-button">login</button>
+            <button type="button" id="register-button">register</button>
+        </div>
+        <div id="message-section">
+            <div id="messages" style="max-width: 600px;
+                                        max-height: 700px;
+                                        overflow-x:auto;
+                                        overflow-y:scroll;">
+
+            </div>
+            <button type="button" id="message-button">message</button>
+            <input type="text" id="msg-field" placeholder="Type message here...">
+        </div>
+        </div>
+        <p id="status">status</p>
+        <button type="button" id="logout-button">logout</button>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

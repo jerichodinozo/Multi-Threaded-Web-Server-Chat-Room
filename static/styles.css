@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+#messages {
+    max-width: 600px;
+    overflow-x:auto;
+    overflow-y:scroll;
+}
