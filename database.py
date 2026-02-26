@@ -40,7 +40,7 @@ def handle_request(db: sqlite3.Connection, req: dict) -> dict:
         cur.execute("SELECT username, password FROM users WHERE username=?", (user,))
         row = cur.fetchone()
         if not row:
-            return {"status": 4}  # your code treats 4 as "not found"
+            return {"status": 4} 
         return {"status": 0, "user": {"name": row[0], "pass": row[1]}}
 
     if method == "AddUser":
